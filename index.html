@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Showcase</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="list_title">Seth Anderson</li>
+          <li class="projects_link">
+            <a href="index.html#projects">Projects</a>
+          </li>
+          <li class="about_link"><a href="index.html#about">About</a></li>
+          <li class="contact_link"><a href="index.html#contact">Contact</a></li>
+          <li class="github_link">
+            <a href="https://github.com/SethAnderson2011" taget="_blank"
+              >Github</a
+            >
+          </li>
+          <li class="github_logo">
+            <img src="/images/github.png" width="50px" height="50px" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Hello and Welcome to My Web Design Portfolio!</h1>
+
+      <div class="my_photo">
+        <img
+          src="/images/skydive.jpg"
+          alt="seth anderson skydive photo"
+          class="my_photo"
+          width="300"
+          height="300"
+        />
+      </div>
+      <p class="intro">
+        This is me, and I got to dive into web development during my time in
+        CIS-210 at Bay College.
+      </p>
+
+      <div class="project_showcase">
+        <h2 class="projects_header" id="projects">Projects and Lessons</h2>
+
+        <div class="table">
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>HTML skills learned</th>
+                <th>Link to view project</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Favorite Travel Destination</td>
+                <td>A brief insight to my time in Hawaii</td>
+                <td>Images, Hyperlinks, and lists</td>
+                <td>
+                  <a href="Travel Destination/index.html" target="_blank"
+                    >View Project</a
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td>Tech-Insights</td>
+                <td>Created a technology blog</td>
+                <td>Input types, Buttons, Labels, and Forms</td>
+                <td>
+                  <a href="/Tech/index.html" target="_blank">View Project</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Media Project</td>
+                <td>Added video and audio files</td>
+                <td>Soure, Audio, Caption, Attributes</td>
+                <td>
+                  <a href="/My first blog/SAnderson-blog.html" target="_blank"
+                    >View Project</a
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td>My First Blogpost</td>
+                <td>Created my first blog post about painting miniatures</td>
+                <td>Blockquotes, Articles, Sections, and Aside</td>
+                <td>
+                  <a href="/My first blog/SAnderson-blog.html" target="_blank"
+                    >View Project</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h2 class="lessons">Lessons</h2>
+        <ul class="lessons_list">
+          <li>Basic Page Structure</li>
+          <li>Phrase Elements and Special Characters</li>
+          <li>Images, Hyperlinks. and Lists</li>
+          <li>Integrating Audio and Videos</li>
+          <li>Structuring Content</li>
+          <li>Creating Tables</li>
+          <li>Creating Forms</li>
+          <li>CSS Styling</li>
+          <li>CSS Coloring and The Box Model</li>
+          <li>Advanced Selectors and Specificity</li>
+        </ul>
+      </div>
+
+      <h2 class="about_me" id="about">About Me</h2>
+      <div class="about_me_info">
+        <p>
+          My journey toward becomming an IT professional started at 21 years old
+          when I joined the Navy and became an IT in the military for 6 years.
+          After a year of IT school in Pensacola, Florida I moved to Hawaii for
+          my first duty station.<br />
+          I got to enjoy three years working there before moving to Washington
+          state for two years still working as an IT for the Navy. After my
+          contract ended I moved to Salt Lake City, Utah for about a year and a
+          half working as and IT for a subcontractor of a company called DISA
+          before making my way back to Michigan where I am originally from.<br />
+          After moving back home I worked as a training and safety coordinator
+          for a pallet production company and now I am a student currently
+          enrolled at Bay College furthering my IT education. Learning to create
+          and design web pages has been a great experience so far and now I get
+          to share the project's I've created so far with you and I hope you
+          enjoy them as much as I've enjoyed making them.
+        </p>
+      </div>
+
+      <div class="contact_container">
+        <h2 class="contact" id="contact">Get In Touch</h2>
+        <form action="mailto:seth.anderson@baycollege.com" method="post">
+          <fieldset>
+            <legend>Your Information</legend>
+            <label for="fname">Full Name <span class="required">*</span></label>
+            <input class="text" type="text" id="fname" name="FullName" />
+            <br />
+            <label for="email">Email <span class="required">*</span></label>
+            <input
+              class="text"
+              type="email"
+              id="email"
+              name="email"
+              class="required"
+            />
+            <br />
+            <label for="phone">Phone Number (optional):</label>
+            <input
+              class="text"
+              type="tel"
+              id="phone"
+              name="phone"
+              autocomplete="tel"
+              placeholder="(555)123-4567"
+            />
+          </fieldset>
+          <br />
+
+          <label for="message">Message:</label>
+          <br />
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="50"
+            maxlength="1000"
+          ></textarea>
+          <br /><br />
+          <input type="submit" class="submit" value="Send" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
